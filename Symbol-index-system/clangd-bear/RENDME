@@ -1,0 +1,9 @@
+#vim-clangd
+```
+PlugInstall
+```
+
+#bear generate compile-commands.json
+```
+bear -- make ...(make args)
+```

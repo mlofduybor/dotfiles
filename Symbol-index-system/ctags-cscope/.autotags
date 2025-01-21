@@ -1,0 +1,8 @@
+#！/bin/sh
+
+# 获取当前工作目录并切换到该目录
+echo "Generating tags..."
+ctags -R -f ./.tags
+echo "Generating cscope.out..."
+cscope -Rbq -i <(find "$(pwd)" -name "*.c" -o -name "*.h" -o -name "*.cpp" -o -name "*.v") -f ".cscope.out"
+echo "cscope and ctags files successfully generated in $OUTPUT_DIR"
