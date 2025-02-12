@@ -1,0 +1,14 @@
+2025-02-11 14:18:01 highlight_groups.cpp:459() INFO:Color support: Enabled
+
+2025-02-11 14:18:01 highlight_groups.cpp:461() INFO:ANSI color support: Enabled
+
+2025-02-11 14:18:01 highlight_groups.cpp:463() INFO:Number colors: 256
+
+2025-02-11 14:18:01 highlight_groups.cpp:464() INFO:Number color pairs: 65536
+
+2025-02-11 14:18:01 highlight_groups.cpp:465() INFO:Extended color pair support: Yes
+
+2025-02-11 14:18:02 tgdb.cpp:547() INFO:disassemble supports s mode
+
+2025-02-11 14:18:05 tgdb.cpp:811() INFO:Closing logfile.
+
