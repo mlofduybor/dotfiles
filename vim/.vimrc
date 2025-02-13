@@ -21,7 +21,7 @@ set backspace=indent,eol,start " 不设定在插入状态无法用退格键和 D
 set cmdheight=1 " 设定命令行的行数为 1
 set laststatus=1 " 显示状态栏 (默认值为 1, 无法显示状态栏)
 set nospell "无拼写检查
-set clipboard=unnamedplus "系统剪贴板
+set clipboard=unnamed,unnamedplus "系统剪贴板
 "set foldenable " 开始折叠
 "set foldmethod=syntax " 设置语法折叠
 "set foldcolumn=0 " 设置折叠区域的宽度
@@ -46,6 +46,9 @@ nnoremap B ^
 set background=dark
 
 call plug#begin()
+
+"Plug 'airblade/vim-gitgutter'
+Plug 'airblade/vim-gitgutter'
 Plug 'preservim/nerdtree'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
@@ -56,6 +59,8 @@ call plug#end()
 set signcolumn=yes
 
 let g:gitgutter_highlight_lines = 1
+
+"colorscheme sorbet
 
 " 自定义 gitgutter 的符号为粗竖线
 let g:gitgutter_sign_added = '┃'
@@ -72,8 +77,38 @@ nnoremap <leader>n :NERDTreeFocus<CR>
 nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
-
-
+"                       
+"" 设置 ctags 路径
+"set tags=./.tags;,.tags
+"
+""设置cscope
+"if has("cscope")
+"	set cspc=3			"指定在查找结果中显示多少级文件路径,默认值0表示显示全路径,1表示只显示文件名"
+"	if filereadable(".cscope.out") 
+"		cs add $PWD/cscope.out $PWD
+"		"cs add cscope.out
+"	else" 子目录打开，向上查找
+"		let cscope_file=findfile(".cscope.out", ".;")
+"		if !empty(cscope_file) && filereadable(cscope_file)
+"		  let cscope_pre=matchstr(cscope_file, ".*/")
+"			exe "cs add" cscope_file cscope_pre
+"		endif
+"	endif
+"	set nocsverb
+"endif
+"
+"noremap <leader>cs :cs find s 
+"noremap <C-\>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+"noremap <C-\>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+"noremap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+"noremap <C-\>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+"noremap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+"noremap <C-\>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+"noremap <C-\>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+"noremap <C-\>i :cs find i <C-R>=expand("<cfile>")<CR><CR>
+"
+"
+"
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
