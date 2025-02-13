@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/juniezhang'
+let g:netrw_dirhist_8='/home/juniezhang/Desktop'
+let g:netrw_dirhist_7='/home/juniezhang/Desktop/rtt'
+let g:netrw_dirhist_6='/home/juniezhang/Desktop/tmux-configuration'
+let g:netrw_dirhist_5='/home/juniezhang/Desktop/ysyx/ysyx-workbench/nemu/tools/spike-diff'
+let g:netrw_dirhist_4='/home/juniezhang/Desktop/ysyx/ysyx-workbench/abstract-machine'
+let g:netrw_dirhist_3='/home/juniezhang/Desktop/ysyx/ysyx-workbench/nemu/scripts'
+let g:netrw_dirhist_2='/home/juniezhang/.config/yay'
+let g:netrw_dirhist_1='/home/juniezhang/Desktop/ysyx/ysyx-workbench/am-kernels/tests/cpu-tests/build/riscv32-nemu/tests'
+let g:netrw_dirhist_0='/home/juniezhang/Desktop/ysyx/ysyx-workbench/nemu/src/isa/riscv32'
