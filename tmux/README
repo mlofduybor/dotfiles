@@ -1,0 +1,9 @@
+#pactl get-sink-volume 1
+```
+pactl list sinks short
+```
+
+#free audio 不显示%
+```
+set -g status-right "[ #(free | grep Mem | awk '{printf \"%.0f%%%%\", $3/$2 * 100}')][  #(pactl get-sink-volume 0 | awk -F' ' '{printf $5}')%%][#(cat /sys/class/power_supply/BAT?/capacity)%][%b-%d %a %H:%M][#S]"
+```

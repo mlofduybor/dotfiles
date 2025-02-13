@@ -1,0 +1,10 @@
+# Nerd font
+```
+[font]
+normal = { family = "FiraCode Nerd Font", style = "Regular" }
+```
+
+#vi mode
+Alacritty 内置了 Vi 模式，默认快捷键是 Ctrl + Shift + Space
+
+
